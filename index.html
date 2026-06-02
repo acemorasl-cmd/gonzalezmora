@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>González & Mora — Servicios Administrativos y Gestión Documental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="contenedor header-flex">
+      <div class="logo">
+        <span class="gm-logo">GM</span>
+      </div>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#asesoramiento" class="btn btn-verde">Solicitar asesoramiento</a>
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
+  </header>
+
+  <!-- HERO / PORTADA -->
+  <section class="hero" id="inicio">
+    <div class="contenedor">
+      <h1>No vendemos pólizas.<br>Construimos soluciones.</h1>
+      <p>A tu lado en cada decisión importante.</p>
+
+      <div class="hero-botones">
+        <a href="#asesoramiento" class="btn btn-verde">Solicitar asesoramiento</a>
+        <a href="tel:669812161" class="btn btn-beige">Llamar ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="seccion" id="quienes-somos">
+    <div class="contenedor">
+      <h2>Quiénes somos</h2>
+      <p>
+        González & Mora es un despacho especializado en servicios administrativos y gestión documental.
+        Nuestro objetivo es simplificar trámites, ordenar la documentación y acompañarte con rigor y
+        profesionalidad en cada gestión importante.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="seccion fondo-suave" id="servicios">
+    <div class="contenedor">
+      <h2>Servicios</h2>
+      <ul class="lista-servicios">
+        <li>Gestión documental y organización de archivos.</li>
+        <li>Trámites administrativos para particulares y empresas.</li>
+        <li>Preparación y revisión de documentación financiera.</li>
+        <li>Acompañamiento en gestiones con organismos públicos.</li>
+        <li>Servicios personalizados según las necesidades del cliente.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="seccion" id="contacto">
+    <div class="contenedor">
+      <h2>Contacto</h2>
+      <p>📍 Avenida Constitución, 51 — Hellín (Albacete)</p>
+      <p>📞 <a href="tel:669812161">669 812 161</a></p>
+      <p>📧 <a href="mailto:info@gonzalezmora.es">info@gonzalezmora.es</a></p>
+
+      <div id="asesoramiento" class="contacto-botones">
+        <a href="mailto:info@gonzalezmora.es?subject=Solicitud%20de%20asesoramiento"
+           class="btn btn-verde">Enviar mensaje</a>
+        <a href="https://wa.me/34669812161" class="btn btn-beige">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="contenedor footer-grid">
+
+      <div>
+        <div class="footer-logo">GM</div>
+        <h3>González & Mora</h3>
+        <p>Servicios Administrativos y Gestión Documental</p>
+      </div>
+
+      <div>
+        <h4>Enlaces</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <p>📍 Avenida Constitución, 51 — Hellín (Albacete)</p>
+        <p>📞 <a href="tel:669812161">669 812 161</a></p>
+        <p>📧 <a href="mailto:info@gonzalezmora.es">info@gonzalezmora.es</a></p>
+      </div>
+
+      <div>
+        <h4>Acciones</h4>
+        <a href="mailto:info@gonzalezmora.es?subject=Solicitud%20de%20asesoramiento"
+           class="btn btn-verde">Solicitar asesoramiento</a>
+        <a href="https://wa.me/34669812161" class="btn btn-beige">WhatsApp</a>
+      </div>
+
+    </div>
+
+    <div class="footer-legal">
+      © 2026 González & Mora · Todos los derechos reservados ·
+      <a href="/aviso-legal">Aviso legal</a> ·
+      <a href="/privacidad">Privacidad</a> ·
+      <a href="/cookies">Cookies</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.style.display = (menu.style.display === 'flex' ? 'none' : 'flex');
+    });
+  </script>
+
+</body>
+</html>
+
